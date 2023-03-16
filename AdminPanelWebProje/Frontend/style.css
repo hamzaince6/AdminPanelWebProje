@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: navajowhite;
+    background-image: url("img/arkaplan.jpg");
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center .avatar img{
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+    margin-top: 5%;
+
+}
+
+.center{
+    width: 600px;
+    background-color: rgb(0,0,0,0.7);
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 25px;
+
+}
+
+.content{
+    padding: 30px;
+
+}
+
+h1,h3{
+    color: white;
+}
+
+.content h2,
+p{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+}
+
+div.social i{
+    padding: 0 10px;
+    font-size: 50px;
+    color:rgb(255, 51, 138);
+    transition: 0.4ms;
+}
+
+div.social i:hover{
+    color: rgb(206, 158, 179);
+    zoom: initial;
+
+}
+@media screen and(max-width: 700px) {
+    .center{
+        width: 300px;
+        height: 500px;
+    }
+    h1{
+        font-size: 22px;
+
+    }
+    h2{
+        font-size: 16px;
+
+    }
+    p{
+        width: 90%;
+        font-size: 12px;
+
+    }
+    h3{
+        font-size: 14px;
+
+    }
+
+    .social a i{
+        font-size: 30px;
+
+    }
+}
+
