@@ -7,21 +7,15 @@ using AdminPanelWebProje.Models.Class;
 
 namespace AdminPanelWebProje.Controllers
 {
-    public class HomeController : Controller
+    public class AdminController : Controller
     {
-        // GET: Home
+        // GET: Admin
         private Context c = new Context();
         public ActionResult Index()
         {
             var deger = c.Anasayfa.ToList();
+
             return View(deger);
         }
-
-        public PartialViewResult icon()
-        {
-            var deger = c.Socialicon.ToList();
-            return PartialView(deger);
-        }
-
     }
 }

@@ -1,0 +1,12 @@
+﻿@using AdminPanelWebProje.Models.Class
+@model List<socialicon>
+
+
+<div class="social">
+    @foreach (var x in Model)
+    {
+        <a href="@x.link"><i class="@x.icon"></i></a>
+    }
+
+
+</div>

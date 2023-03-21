@@ -1,4 +1,5 @@
-﻿
+﻿@using AdminPanelWebProje.Models.Class
+@model List<Anasayfa>
 @{
     Layout = null;
 }
@@ -18,18 +19,17 @@
         <img src="/Frontend/img/IMG-20220519-WA0009.jpg">
     </div>
     <div class="content">
-        <h1>Muhammet Hamza İnce</h1>
-        <h2>Asp.Net Dersleri</h2>
-        <p>Making Trivy accessible in as many places as possible will help developers embed security good practices early in the development lifecycle, improving the quality of the applications that an organization deploys. Throughout this year, we’ll be adding new integrations and features to ensure that Trivy can be used effectively in a wide variety of scenarios. If there’s an integration you’d like to see for Trivy, add an issue to our GitHub page to let us know.</p>
-        <h3>Sosyal Medya Hesapları</h3>
+       @foreach (var x in Model)
+       {
+           <h1>@x.Name</h1>
+           <h2>@x.job</h2>
+           <p>@x.text</p>
+           <h3>@x.socialtext</h3>
+       }             
+       
     </div>
-    <div class="social">
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitch"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-    </div>
+
+    @Html.Action("icon","Home")
 
 </div>
 </body>
